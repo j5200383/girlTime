@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WTN-f3-t7w">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="crayon_1-1.ttf">
+            <string>Nagurigaki-Crayon</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--正妹計時器-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="girlTime" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="ZSA-d4-qeH">
+                                <rect key="frame" x="30" y="100" width="315" height="612"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="rSu-YV-JRW">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="281"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackboard" translatesAutoresizingMaskIntoConstraints="NO" id="Hxf-Yc-SUq">
+                                        <rect key="frame" x="0.0" y="331" width="315" height="281"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gF-4b-kTJ">
+                                <rect key="frame" x="150" y="556.66666666666663" width="75" height="30"/>
+                                <fontDescription key="fontDescription" name="Nagurigaki-Crayon" family="Nagurigaki Crayon" pointSize="30"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZSA-d4-qeH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1GU-KJ-jx6"/>
+                            <constraint firstItem="1gF-4b-kTJ" firstAttribute="centerY" secondItem="Hxf-Yc-SUq" secondAttribute="centerY" id="EKr-LY-XM7"/>
+                            <constraint firstItem="ZSA-d4-qeH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="X83-Ij-gAh"/>
+                            <constraint firstItem="ZSA-d4-qeH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dd1-Mw-B1h"/>
+                            <constraint firstAttribute="bottom" secondItem="ZSA-d4-qeH" secondAttribute="bottom" constant="100" id="oYi-U7-DUa"/>
+                            <constraint firstItem="1gF-4b-kTJ" firstAttribute="centerX" secondItem="Hxf-Yc-SUq" secondAttribute="centerX" id="ofC-4h-alj"/>
+                            <constraint firstItem="ZSA-d4-qeH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="xNS-P9-QtH"/>
+                            <constraint firstAttribute="trailing" secondItem="ZSA-d4-qeH" secondAttribute="trailing" constant="30" id="z8H-e4-fxK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="正妹計時器" id="icV-aH-8J9"/>
+                    <connections>
+                        <outlet property="imageView" destination="rSu-YV-JRW" id="Oca-Md-UkG"/>
+                        <outlet property="timeLabel" destination="1gF-4b-kTJ" id="bm1-06-AYt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="975.20000000000005" y="35.467980295566505"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Uan-At-sIN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WTN-f3-t7w" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="H5b-m4-ehW">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ee2-0a-5Bq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bvC-7X-U9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="35.467980295566505"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="300" height="450"/>
+        <image name="blackboard" width="1280" height="812"/>
+    </resources>
+</document>
